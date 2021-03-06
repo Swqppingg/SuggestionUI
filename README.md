@@ -9,9 +9,9 @@ Script for sending suggestions in-game
 **/suggestion** - Opens the suggestion UI
 
 # :camera: **Pictures:**
-![In-game UI](https://imgur.com/a/8Moj3J2)
+![In-game UI](https://i.imgur.com/zzIM0QM.png)
 
-![Discord Webhook](https://imgur.com/a/x7nAqIs)
+![Discord Webhook](https://i.imgur.com/mo25brm.png)
 
 # :inbox_tray: Download
 [Download via Github](https://github.com/Swqppingg/SuggestionUI)

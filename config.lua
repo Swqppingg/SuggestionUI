@@ -1,7 +1,7 @@
 Config = {}
 
 -- Change this to your discord webhook link
-Config.discordwebhooklink = ''
+Config.discordwebhooklink = 'WEBHOOK_HERE'
 
 
 

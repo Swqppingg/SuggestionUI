@@ -1,0 +1,80 @@
+body {
+  display: none;
+  width: 30%;
+  margin: auto;
+  margin-top: 12%;
+
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.top {
+  padding-top: 1%;
+  background-color: #040404;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.abusenote {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main {
+  padding: 1%;
+  padding-top: 5%;
+  background-color: #141414;
+  color: black;
+  border-radius: 0% 0% 5px 2px;
+  text-align: left;
+}
+
+.col-25 {
+  margin-left: 15%;
+  margin-top: 5%;
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+  color: #FFFFFF;
+}
+
+.col-75 {
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 80%;
+  margin-top: 6px;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input:nth-of-type(1), input:nth-of-type(2) {
+  display: inline;
+  width: 49%;
+}
+
+input[type=button] {
+  display: inline-block;
+  outline: 0;
+  background: #eb3434;
+  width: 27%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-left: 35%;
+  margin-top: 0.5%;
+  border-radius: 5%;
+}
+input[type=button]:hover {
+  background: #38c738;
+}

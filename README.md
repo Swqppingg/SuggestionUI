@@ -1,14 +1,23 @@
-**Requirements:**
+# :warning: Information
+Script for sending suggestions in-game
 
+
+# :hammer_and_wrench: Requirements
 [pNotify](https://forum.cfx.re/t/release-pnotify-in-game-js-notifications-using-noty/20659)
 
+# :computer: **Commands:**
+**/suggestion** - Opens the suggestion UI
 
-**Commands:**
+# :camera: **Pictures:**
+![In-game UI](https://imgur.com/a/8Moj3J2)
 
-/bugreport - Opens the bugreport UI
+![Discord Webhook](https://imgur.com/a/x7nAqIs)
 
-**Pictures:**
+# :inbox_tray: Download
+[Download via Github](https://github.com/Swqppingg/SuggestionUI)
 
-![In-game UI](https://i.imgur.com/0px6FPz.png)
+# :gear: How to install
+1. Add the **SuggestionUI** folder to your FiveM resources directory.
+2. Edit your server.cfg and add “ensure **SuggestionUI**”
+3. Edit config.lua and add your discord webhook link
 
-![Discord Webhook](https://i.imgur.com/g29JtVI.png)

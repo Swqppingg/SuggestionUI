@@ -6,14 +6,14 @@ function GetPlayerNeededIdentifiers(source)
 			elseif string.find(theIdentifier,"steam:") or -1 > -1 then
 				steam = theIdentifier
 			elseif string.find(theIdentifier,"discord:") or -1 > -1 then
-				discord = theIdentifier
+				discord2 = theIdentifier
 			end
 		end
 		if not steam then
 			steam = "Not found"
 		end
-		if not discord then
-			discord = "Not found"
+		if not discord2 then
+			discord2 = "Not found"
 		end
 		return license, steam, discord2
 	end
@@ -36,7 +36,7 @@ if Config.displayidentifiers then
         {
           title = "New Suggestion",
           color = 16754176,
-          description = "**User:** ".. GetPlayerName(source) .. " **[ID:** ".. source .."**]**\n**Suggestion:** ".. description .."\n**Steam:** ".. steam:gsub('discord:', '') .."\n**GameLicense:** ".. license:gsub('discord:', '') .."\n**Discord UID:** ".. discord:gsub('discord:', '') .."\n**Discord Tag:** <@!"..  discord:gsub('discord:', '') .. ">",
+          description = "**User:** ".. GetPlayerName(source) .. " **[ID:** ".. source .."**]**\n**Suggestion:** ".. description .."\n**Steam:** ".. steam:gsub('discord:', '') .."\n**GameLicense:** ".. license:gsub('discord:', '') .."\n**Discord UID:** ".. discord2:gsub('discord:', '') .."\n**Discord Tag:** <@!"..  discord2:gsub('discord:', '') .. ">",
         }
       },
     }), { ['Content-Type'] = 'application/json' })

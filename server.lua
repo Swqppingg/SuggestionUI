@@ -87,39 +87,24 @@ Citizen.CreateThread(function()
     end
 end)
 
--- Version Check
-Citizen.CreateThread(
-	function()
-		if Config.versionchecker then
-		local vRaw = LoadResourceFile(GetCurrentResourceName(), 'version.json')
-		if vRaw and Config.versionCheck then
-			local v = json.decode(vRaw)
-			PerformHttpRequest(
-				'https://raw.githubusercontent.com/Swqppingg/SuggestionUI/main/version.json',
-				function(code, res, headers)
-					if code == 200 then
-						local rv = json.decode(res)
-						if rv.version ~= v.version then
-							print(
-								([[^1
--------------------------------------------------------
-SuggestionUI
-UPDATE: %s AVAILABLE
-CHANGELOG: %s
-DOWNLOAD: https://github.com/Swqppingg/SuggestionUI
--------------------------------------------------------
-^0]]):format(
-									rv.version,
-									rv.changelog
-								)
-							)
-						end
-					else
-						print('^SuggestionUI was unable to check version^0')
-					end
-				end,
-				'GET'
-			)
-		end
-	end
-end)
+
+versionChecker = true -- Set to false to disable version checker
+
+
+
+-- Don't touch
+resourcename = "SuggestionUI"
+version = "1.0.1"
+rawVersionLink = "https://raw.githubusercontent.com/Swqppingg/SuggestionUI/main/version.txt"
+
+
+-- Check for version updates.
+if versionChecker then
+PerformHttpRequest(rawVersionLink, function(errorCode, result, headers)
+    if (string.find(tostring(result), version) == nil) then
+        print("\n\r[".. GetCurrentResourceName() .."] ^1WARNING: Your version of ".. resourcename .." is not up to date. Please make sure to update whenever possible.\n\r")
+    else
+        print("\n\r[".. GetCurrentResourceName() .."] ^2You are running the latest version of ".. resourcename ..".\n\r")
+    end
+end, "GET", "", "")
+end

@@ -21,3 +21,8 @@ Script for sending suggestions in-game
 2. Edit your server.cfg and add “ensure **SuggestionUI**”
 3. Edit config.lua and add your discord webhook link
 
+# :wrench: Support
+Open an issue or join my discord server for support
+https://discord.gg/X3Mb74Phnq
+
+---------------------------------------------------
